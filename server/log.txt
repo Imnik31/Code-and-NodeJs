@@ -1,2 +1,8 @@
 1706782133481: new req received
 1706782133602: new req received
+1706801352587: / new req received
+1706801352665: /favicon.ico new req received
+1706801362211: / new req received
+1706801362256: /favicon.ico new req received
+1706801369199: /about new req received
+1706801369244: /favicon.ico new req received
