@@ -1,6 +1,29 @@
 // const http= require("http")
 // const fs= require("fs")
 // const url=require("url")
+
+
+
+// created server by http module
+const  myServer= http.createServer((req, res)=>{
+  console.log("req,fs");
+  // const log =`${Date.now()}:${req.method} ${req.url} new req received\n`
+  //   fs.appendFile("log.txt", log, (err, data)=>{
+  //  switch(myUrl.pathname){
+  //   case "/":
+  //     if (req.method==='GET') 
+  //       res.end("HomePage")
+  //       break;
+  res.end("hello from server")
+})
+
+
+myServer.listen(8000,()=>{
+    console.log("server started");
+})
+
+
+
 const express= require("express")
 
 const app= express()
@@ -12,7 +35,8 @@ app.get("/about", (req,res)=>{
   return res.send (`Hello ${req.query.name}`)
 })
 
-app.post
+
+// handling URLs in Nodejs
 
 // function myHandler(req,res){
 //   if (req.url==="/favicon.ico") return res.end()
@@ -42,8 +66,4 @@ app.post
 // }
 
 app.listen(8000, ()=>console.log("server started"))
-// const  myServer= http.createServer(app)
 
-// myServer.listen(8000,()=>{
-//     console.log("server started");
-// })
