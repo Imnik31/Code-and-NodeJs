@@ -19,3 +19,6 @@
 1706938734095: / new req received
 1706938851507:GET / new req received
 1706939307200:GET /signup new req received
+1719795836531:GET / New req received
+1719795860068:GET /about New req received
+1719795871608:GET /signup New req received
